@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Het-QT-6Ep">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="B79-IM-jau">
+            <objects>
+                <viewController id="Het-QT-6Ep" customClass="ViewController" customModule="Speak2U" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Eeg-MK-Uu3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="emojimix_⛄_🤖" translatesAutoresizingMaskIntoConstraints="NO" id="J05-G4-FQe">
+                                <rect key="frame" x="-20" y="94" width="454" height="534"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gxc-bF-dly">
+                                <rect key="frame" x="89" y="144" width="228" height="228"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal">
+                                    <color key="titleColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="speak:" destination="Het-QT-6Ep" eventType="touchUpInside" id="Nnl-il-oWp"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" verticalHuggingPriority="252" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="想說的話" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="62o-ka-1xF">
+                                <rect key="frame" x="20" y="668" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                            </textField>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="TYT-eD-gl7">
+                                <rect key="frame" x="18" y="792" width="308.5" height="31"/>
+                                <color key="minimumTrackTintColor" systemColor="systemGreenColor"/>
+                                <connections>
+                                    <action selector="sliderAdjust:" destination="Het-QT-6Ep" eventType="valueChanged" id="u86-Ah-mGs"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BeK-ct-Q0M">
+                                <rect key="frame" x="352.5" y="722" width="41.5" height="50"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hEh-tV-QQ8">
+                                <rect key="frame" x="352.5" y="782" width="41.5" height="50"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.5" maxValue="2" translatesAutoresizingMaskIntoConstraints="NO" id="SH2-Fz-eGd">
+                                <rect key="frame" x="18" y="732" width="308.5" height="31"/>
+                                <color key="minimumTrackTintColor" systemColor="systemPinkColor"/>
+                                <connections>
+                                    <action selector="sliderAdjust:" destination="Het-QT-6Ep" eventType="valueChanged" id="rlI-Hh-FBM"/>
+                                </connections>
+                            </slider>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="sM3-aU-pxB"/>
+                        <color key="backgroundColor" systemColor="tintColor"/>
+                        <constraints>
+                            <constraint firstItem="hEh-tV-QQ8" firstAttribute="trailing" secondItem="62o-ka-1xF" secondAttribute="trailing" id="4S1-Lq-EHB"/>
+                            <constraint firstItem="hEh-tV-QQ8" firstAttribute="height" secondItem="BeK-ct-Q0M" secondAttribute="height" id="8Lc-D7-gJp"/>
+                            <constraint firstItem="J05-G4-FQe" firstAttribute="centerX" secondItem="Eeg-MK-Uu3" secondAttribute="centerX" id="AHf-vY-VNH"/>
+                            <constraint firstItem="TYT-eD-gl7" firstAttribute="top" secondItem="SH2-Fz-eGd" secondAttribute="bottom" constant="30" id="BxW-0o-jKF" userLabel="Speed Slider.centerY = Pitch Slider.centerY + 40"/>
+                            <constraint firstItem="J05-G4-FQe" firstAttribute="leading" secondItem="Eeg-MK-Uu3" secondAttribute="leading" priority="850" constant="-20" id="EH2-Xe-4fN"/>
+                            <constraint firstAttribute="trailing" secondItem="62o-ka-1xF" secondAttribute="trailing" constant="20" id="GFE-Kp-e7Q"/>
+                            <constraint firstItem="TYT-eD-gl7" firstAttribute="leading" secondItem="sM3-aU-pxB" secondAttribute="leading" constant="20" id="M2Y-OQ-gcN"/>
+                            <constraint firstItem="hEh-tV-QQ8" firstAttribute="height" secondItem="TYT-eD-gl7" secondAttribute="height" multiplier="1.66667" id="Q1W-Iy-jyc" userLabel="Speed Value Idencator.height = Speed Slider.height"/>
+                            <constraint firstItem="J05-G4-FQe" firstAttribute="top" secondItem="Eeg-MK-Uu3" secondAttribute="top" priority="700" constant="100" id="Rgf-hv-7ZL"/>
+                            <constraint firstAttribute="trailing" secondItem="J05-G4-FQe" secondAttribute="trailing" constant="-20" id="Upz-Jy-KAU"/>
+                            <constraint firstItem="hEh-tV-QQ8" firstAttribute="leading" secondItem="TYT-eD-gl7" secondAttribute="trailing" constant="28" id="WUI-8E-q0a"/>
+                            <constraint firstItem="62o-ka-1xF" firstAttribute="top" secondItem="J05-G4-FQe" secondAttribute="bottom" constant="40" id="Wiq-cr-PIF"/>
+                            <constraint firstItem="SH2-Fz-eGd" firstAttribute="top" secondItem="62o-ka-1xF" secondAttribute="bottom" constant="30" id="Y6g-nq-8ST"/>
+                            <constraint firstItem="sM3-aU-pxB" firstAttribute="bottom" secondItem="TYT-eD-gl7" secondAttribute="bottom" constant="40" id="cpV-xo-C4y"/>
+                            <constraint firstItem="SH2-Fz-eGd" firstAttribute="leading" secondItem="sM3-aU-pxB" secondAttribute="leading" constant="20" id="dgo-kv-3sH"/>
+                            <constraint firstItem="BeK-ct-Q0M" firstAttribute="trailing" secondItem="62o-ka-1xF" secondAttribute="trailing" id="ger-lQ-we4"/>
+                            <constraint firstItem="BeK-ct-Q0M" firstAttribute="leading" secondItem="SH2-Fz-eGd" secondAttribute="trailing" constant="28" id="jyt-aE-zdT"/>
+                            <constraint firstItem="TYT-eD-gl7" firstAttribute="leading" secondItem="Eeg-MK-Uu3" secondAttribute="leading" constant="20" id="l3J-xo-Sdg"/>
+                            <constraint firstItem="BeK-ct-Q0M" firstAttribute="centerY" secondItem="SH2-Fz-eGd" secondAttribute="centerY" id="mgl-AK-uY3"/>
+                            <constraint firstItem="SH2-Fz-eGd" firstAttribute="leading" secondItem="Eeg-MK-Uu3" secondAttribute="leading" constant="20" id="npm-79-PI6"/>
+                            <constraint firstItem="hEh-tV-QQ8" firstAttribute="width" secondItem="BeK-ct-Q0M" secondAttribute="width" id="rBi-5i-4g5"/>
+                            <constraint firstItem="62o-ka-1xF" firstAttribute="leading" secondItem="Eeg-MK-Uu3" secondAttribute="leading" constant="20" id="v9u-lY-9SH"/>
+                            <constraint firstItem="hEh-tV-QQ8" firstAttribute="centerY" secondItem="TYT-eD-gl7" secondAttribute="centerY" id="zkU-jH-5Yp"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="pitchSlider" destination="SH2-Fz-eGd" id="Ne0-ZN-kB5"/>
+                        <outlet property="pitchValueIndicator" destination="BeK-ct-Q0M" id="51z-r5-OZb"/>
+                        <outlet property="speakwords" destination="62o-ka-1xF" id="mN3-RW-vsL"/>
+                        <outlet property="speedSlider" destination="TYT-eD-gl7" id="XIw-v2-6bU"/>
+                        <outlet property="speedValueIdencator" destination="hEh-tV-QQ8" id="076-KF-lHW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dim-Mo-QHx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-353.27102803738313" y="-1769.5464362850973"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="emojimix_⛄_🤖" width="534" height="534"/>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
